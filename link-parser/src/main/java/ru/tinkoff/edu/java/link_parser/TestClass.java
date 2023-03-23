@@ -1,5 +1,10 @@
 package ru.tinkoff.edu.java.link_parser;
 
+import ru.tinkoff.edu.java.link_parser.answer.GitHubAnswer;
+import ru.tinkoff.edu.java.link_parser.answer.StackOverflowAnswer;
+import ru.tinkoff.edu.java.link_parser.answer.URLAnswer;
+import ru.tinkoff.edu.java.link_parser.parser.URLParser;
+
 import java.util.Scanner;
 
 public class TestClass {

@@ -1,4 +1,4 @@
-package ru.tinkoff.edu.java.link_parser;
+package ru.tinkoff.edu.java.link_parser.answer;
 
 public final class StackOverflowAnswer extends URLAnswer {
     public Long id;
