@@ -7,8 +7,8 @@ import java.util.regex.Pattern;
 
 public final class GitHubParser implements URLParser {
 
-    public static URLAnswer parseURL(String url) {
-        if (!Pattern.matches("(^(https?://)github\\.com/[^/ ]*/[^/ ]*/?)", url)) {
+    public URLAnswer parseURL(String url) {
+        if (!Pattern.matches("(^(https?://)github\\.com/[^/ ]+/[^/ ]+/?)", url)) {
             return null;
         }
 

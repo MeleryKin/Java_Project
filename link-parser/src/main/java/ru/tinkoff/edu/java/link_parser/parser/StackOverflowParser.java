@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 public final class StackOverflowParser implements URLParser {
 
-    public static URLAnswer parseURL(String url) {
+    public URLAnswer parseURL(String url) {
         if (!Pattern.matches("(^(https?://)stackoverflow\\.com/questions/\\d*/[^/ ]*/?)", url)) {
             return null;
         }
