@@ -11,9 +11,9 @@ paths:
       summary: Зарегистрировать чат
       parameters:
       - name: id
-      -  in: path
-      -  required: true
-      -  schema:
+        in: path
+        required: true
+        schema:
           type: integer
           format: int64
       responses:
@@ -29,9 +29,9 @@ paths:
       summary: Удалить чат
       parameters:
       - name: id
-      -  in: path
-      -  required: true
-      -  schema:
+        in: path
+        required: true
+        schema:
           type: integer
           format: int64
       responses:
@@ -54,9 +54,9 @@ paths:
       summary: Получить все отслеживаемые ссылки
       parameters:
       - name: Tg-Chat-Id
-      -  in: header
-      -  required: true
-      -  schema:
+        in: header
+        required: true
+        schema:
           type: integer
           format: int64
       responses:
@@ -76,9 +76,9 @@ paths:
       summary: Добавить отслеживание ссылки
       parameters:
       - name: Tg-Chat-Id
-      -  in: header
-      -  required: true
-      -  schema:
+        in: header
+        required: true
+        schema:
           type: integer
           format: int64
       requestBody:
@@ -104,9 +104,9 @@ paths:
       summary: Убрать отслеживание ссылки
       parameters:
       - name: Tg-Chat-Id
-      -  in: header
-      -  required: true
-      -  schema:
+        in: header
+        required: true
+        schema:
           type: integer
           format: int64
       requestBody:
@@ -136,9 +136,9 @@ paths:
                 "$ref": "#/components/schemas/ApiErrorResponse"
 components:
   schemas:
-
-############## Requests ###############
-
+  
+  ############## Requests ###############
+  
     AddLinkRequest:
       type: object
       properties:
@@ -153,7 +153,7 @@ components:
           type: string
           format: uri
 
-############## Responses ###############
+  ############## Responses ###############
 
     LinkResponse:
       type: object
@@ -191,4 +191,3 @@ components:
         size:
           type: integer
           format: int32
-

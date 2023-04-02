@@ -32,15 +32,15 @@ components:
     LinkUpdateRequest:
       type: object
       properties:
-        - id:
+          id:
             type: integer
             format: int64
-        - url:
+          url:
             type: string
             format: uri
-        - description:
+          description:
             type: string
-        - tgChatIds:
+          tgChatIds:
             type: array
             items:
               type: integer
@@ -51,15 +51,15 @@ components:
     ApiErrorResponse:
       type: object
       properties:
-       - description:
+         description:
           type: string
-       - code:
+         code:
           type: string
-       - exceptionName:
+         exceptionName:
           type: string
-       - exceptionMessage:
+         exceptionMessage:
           type: string
-       - stacktrace:
+         stacktrace:
           type: array
           items:
             type: string
