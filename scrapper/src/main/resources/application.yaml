@@ -1,0 +1,11 @@
+app:
+  test: "scrapper_test"
+  scheduler:
+    interval: 10000
+  stackoverflow:
+    url: "https://api.stackexchange.com/2.3"
+  github:
+    url: "https://api.github.com"
+springdoc:
+  swagger-ui:
+    path: /swagger-ui

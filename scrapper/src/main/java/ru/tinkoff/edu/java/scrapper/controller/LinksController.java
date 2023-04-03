@@ -1,11 +1,13 @@
 package ru.tinkoff.edu.java.scrapper.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import ru.tinkoff.edu.java.scrapper.dto.request.AddLinkRequest;
 import ru.tinkoff.edu.java.scrapper.dto.request.RemoveLinkRequest;
 import ru.tinkoff.edu.java.scrapper.dto.response.LinkResponse;
 import ru.tinkoff.edu.java.scrapper.dto.response.ListLinksResponse;
+import ru.tinkoff.edu.java.scrapper.service.StackOverflowService;
 
 import java.net.URI;
 import java.util.ArrayList;
@@ -13,7 +15,6 @@ import java.util.ArrayList;
 @RestController
 @RequestMapping("/links")
 public class LinksController {
-
     @GetMapping(
             path = "/{id}",
             produces = MediaType.APPLICATION_JSON_VALUE
