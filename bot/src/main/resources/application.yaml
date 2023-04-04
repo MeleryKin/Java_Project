@@ -1,5 +1,9 @@
 app:
-  test: "scrapper_test"
+  test: "test"
+  bot:
+    name: "link-bot"
+    token: ${BOT_TOKEN}
+
 springdoc:
   swagger-ui:
     path: /swagger-ui

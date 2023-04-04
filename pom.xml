@@ -22,6 +22,7 @@
         <spring-cloud.version>2022.0.0</spring-cloud.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <springdoc-openapi-starter-webmvc-ui.version>2.0.2</springdoc-openapi-starter-webmvc-ui.version>
+        <telegrambots.version>6.5.0</telegrambots.version>
     </properties>
 
     <dependencyManagement>
@@ -46,6 +47,18 @@
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
                 <version>${springdoc-openapi-starter-webmvc-ui.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.telegram</groupId>
+                <artifactId>telegrambots</artifactId>
+                <version>${telegrambots.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.telegram</groupId>
+                <artifactId>telegrambots-spring-boot-starter</artifactId>
+                <version>${telegrambots.version}</version>
             </dependency>
 
         </dependencies>
